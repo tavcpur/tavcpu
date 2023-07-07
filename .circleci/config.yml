@@ -3,8 +3,8 @@ version: 2.1
 jobs:
   build:
     docker:
-      - executor: small
-      - image: cimg/python:3.11.4
+      executor: small
+      image: cimg/python:3.11.4
     steps:
       - checkout
       - run: |
